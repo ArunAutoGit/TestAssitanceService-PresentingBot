@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .video-card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            width: 320px;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Videos</h1>
+    <div class="video-container">
+        <!-- Add your videos here -->
+        <div class="video-card">
+            <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption">PresentingBot</div>
+        </div>
+        <!-- Repeat the above block for more videos -->
+    </div>
+</body>
+</html>
